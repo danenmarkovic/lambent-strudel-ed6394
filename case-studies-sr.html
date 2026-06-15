@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bion Med | Studije slučaja</title>
+  <meta name="description" content="Predstavnički pravci Bion Med savetodavnih projekata u biomedicinskim naukama.">
+  <link rel="stylesheet" href="styles.css?v=mobile-final-20260612">
+</head>
+<body>
+  <header class="site-header" aria-label="Primarna navigacija">
+    <div class="brand-center">
+      <a class="brand" href="solution-b-sr.html#top" aria-label="Bion Med početna strana">
+        <span class="brand-asset brand-asset-mark">
+          <img class="brand-mark" src="g3-proposals/bion-med-chatgpt-monogram-grafism-cropped.png" alt="">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+        <span class="brand-asset brand-asset-logo">
+          <img class="brand-logo" src="g3-proposals/bion-med-chatgpt-logotype-cropped.png" alt="Bion Med">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+      </a>
+      <p class="brand-sectors">Farmacija Biotehnologija Medicinski proizvodi Klinička ispitivanja</p>
+    </div>
+
+    <div class="language-switch" aria-label="Izbor jezika">
+      <a class="language-link is-active" href="case-studies-sr.html" aria-label="Srpska verzija" aria-current="page">
+        <span class="language-flag" aria-hidden="true">🇷🇸</span>
+        <span>srb</span>
+      </a>
+      <a class="language-link" href="case-studies.html" aria-label="Engleska verzija">
+        <span class="language-flag" aria-hidden="true">🇬🇧</span>
+        <span>eng</span>
+      </a>
+    </div>
+
+    <nav class="side-menu" aria-label="Sekcije sajta">
+      <button class="menu-trigger" type="button" aria-label="Otvori meni">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="side-panel">
+        <a href="solution-b-sr.html#about">O nama</a>
+        <a href="solution-b-sr.html#services">Naše usluge</a>
+        <a href="solution-b-sr.html#process-automation">Automatizacija procesa</a>
+        <a href="solution-b-sr.html#experience">Naše iskustvo</a>
+        <a href="solution-b-sr.html#why-choose-us">Zašto izabrati nas</a>
+        <a href="solution-b-sr.html#message-inquiries">Kontakt</a>
+        <a href="case-studies-sr.html" aria-current="page">Studije slučaja</a>
+        <a href="news-sr.html">Novosti</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="case-page">
+      <div class="section-heading">
+        <p class="section-label">Studije slučaja</p>
+        <h1>Predstavnički pravci projekata</h1>
+      </div>
+      <div class="case-list">
+        <article>
+          <span>01</span>
+          <h3>Put od dokaza do tržišta</h3>
+          <p>Razjašnjavanje naučne priče, prioriteta ključnih učesnika i koraka pripreme za lansiranje.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Podrška izboru ugovorne istraživačke organizacije</h3>
+          <p>Izrada kriterijuma procene i materijala za odlučivanje za tim naručioca.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Spremnost medicinskog proizvoda</h3>
+          <p>Usklađivanje tvrdnji o proizvodu, dokumentacionih potreba i spoljašnje komunikacije.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="solution-b-sr.html#message-inquiries">Kontakt</a>
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3W9Iv8rAubSwvGtwa5ucIwI_nNhwjz5LhxlbKPDGXNx2U5GC1hXW3__2z9-smpKLWtkaJI_X5J" target="_blank" rel="noopener">Zakažite sastanak</a>
+    <a href="privacy-sr.html">Obaveštenje o privatnosti</a>
+    <a href="cookies-sr.html">Kolačići</a>
+  </footer>
+  <script>
+    const siteHeader = document.querySelector('.site-header');
+
+    const updateTopFade = () => {
+      const distance = Math.min(Math.max(window.scrollY, 0), 260);
+      const fade = 1 - distance / 260;
+      siteHeader.style.setProperty('--top-fade', fade.toFixed(3));
+      siteHeader.style.setProperty('--top-shift', `${Math.round((1 - fade) * -34)}px`);
+      siteHeader.style.setProperty('--top-pointer-events', fade > 0.08 ? 'auto' : 'none');
+      siteHeader.style.setProperty('--header-bg-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-border-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-blur', `${Math.round(18 * fade)}px`);
+    };
+
+    updateTopFade();
+    window.addEventListener('scroll', updateTopFade, { passive: true });
+  </script>
+</body>
+</html>

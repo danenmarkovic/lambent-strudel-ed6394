@@ -1,0 +1,42 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Medical devices precision visualization">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4fbff"/>
+      <stop offset="1" stop-color="#eef3f8"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2B4B"/>
+      <stop offset="1" stop-color="#0D6B6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg3)"/>
+  <g transform="translate(250 170)">
+    <rect x="0" y="0" width="680" height="480" rx="44" fill="#ffffff"/>
+    <rect x="42" y="52" width="596" height="330" rx="20" fill="url(#screen)"/>
+    <path d="M88 244 L176 244 L214 178 L272 304 L326 116 L382 244 L540 244" fill="none" stroke="#4DAFF7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="214" cy="178" r="11" fill="#FFD24D"/>
+    <circle cx="326" cy="116" r="11" fill="#3DBE7A"/>
+    <circle cx="540" cy="244" r="11" fill="#FFD24D"/>
+    <rect x="260" y="414" width="160" height="24" rx="12" fill="#E6EBF1"/>
+  </g>
+  <g transform="translate(980 220)" fill="none" stroke-linecap="round">
+    <circle cx="188" cy="188" r="150" stroke="#4DAFF7" stroke-width="24" opacity="0.82"/>
+    <path d="M188 60 V188 L284 264" stroke="#3DBE7A" stroke-width="20"/>
+    <path d="M80 338 L296 338" stroke="#1B2B4B" stroke-width="18"/>
+    <path d="M188 338 V448" stroke="#1B2B4B" stroke-width="18"/>
+    <path d="M118 448 H258" stroke="#FFD24D" stroke-width="18"/>
+  </g>
+  <g opacity="0.44" fill="#4DAFF7">
+    <circle cx="1230" cy="145" r="18"/>
+    <circle cx="1312" cy="168" r="10"/>
+    <circle cx="1370" cy="226" r="14"/>
+    <circle cx="1112" cy="708" r="12"/>
+    <circle cx="1194" cy="742" r="18"/>
+  </g>
+  <g transform="translate(912 610)" opacity="0.9">
+    <rect x="0" y="0" width="390" height="126" rx="22" fill="#ffffff" opacity="0.78"/>
+    <path d="M40 88 C82 28 130 28 172 88 S260 148 318 72" fill="none" stroke="#4DAFF7" stroke-width="8" stroke-linecap="round"/>
+    <path d="M40 40 C82 100 130 100 172 40 S260 -20 318 56" fill="none" stroke="#3DBE7A" stroke-width="8" stroke-linecap="round"/>
+    <path d="M70 64 H112 M142 64 H184 M214 64 H256 M286 64 H328" stroke="#FFD24D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

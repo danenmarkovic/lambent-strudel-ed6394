@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Regulatory pathway scientific visualization">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9fbff"/>
+      <stop offset="0.56" stop-color="#eef8ff"/>
+      <stop offset="1" stop-color="#f0fbf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg5)"/>
+  <path d="M210 590 C400 262 654 260 802 456 S1108 732 1390 308" fill="none" stroke="#1B2B4B" stroke-width="24" stroke-linecap="round" opacity="0.14"/>
+  <path d="M210 590 C400 262 654 260 802 456 S1108 732 1390 308" fill="none" stroke="#4DAFF7" stroke-width="8" stroke-linecap="round"/>
+  <g>
+    <circle cx="210" cy="590" r="54" fill="#4DAFF7"/>
+    <circle cx="476" cy="300" r="70" fill="#3DBE7A"/>
+    <circle cx="802" cy="456" r="64" fill="#FFD24D"/>
+    <circle cx="1118" cy="648" r="72" fill="#4DAFF7"/>
+    <circle cx="1390" cy="308" r="58" fill="#3DBE7A"/>
+  </g>
+  <g fill="white" opacity="0.96">
+    <rect x="184" y="584" width="52" height="12" rx="6"/>
+    <path d="M452 298 L472 318 L506 276" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="802" cy="456" r="12"/>
+    <path d="M1084 648 H1152 M1118 614 V682" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1364 308 H1416" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g stroke="#1B2B4B" stroke-width="4" opacity="0.22">
+    <path d="M320 708 H580"/>
+    <path d="M1020 186 H1320"/>
+    <path d="M178 238 H430"/>
+    <path d="M1178 778 H1458"/>
+  </g>
+  <g transform="translate(212 96)" opacity="0.92">
+    <rect x="0" y="0" width="420" height="168" rx="26" fill="#ffffff" opacity="0.76"/>
+    <path d="M58 122 C104 48 152 48 198 122 S292 196 354 88" fill="none" stroke="#4DAFF7" stroke-width="9" stroke-linecap="round"/>
+    <path d="M58 46 C104 120 152 120 198 46 S292 -28 354 80" fill="none" stroke="#3DBE7A" stroke-width="9" stroke-linecap="round"/>
+    <path d="M88 84 H136 M164 84 H212 M240 84 H288 M316 84 H360" stroke="#FFD24D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 142 H168 M196 142 H286 M314 142 H366" stroke="#1B2B4B" stroke-width="7" stroke-linecap="round" opacity="0.42"/>
+  </g>
+</svg>

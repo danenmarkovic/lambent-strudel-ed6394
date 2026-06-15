@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bion Med | Case Studies</title>
+  <meta name="description" content="Representative Bion Med life sciences consulting case study directions.">
+  <link rel="stylesheet" href="styles.css?v=mobile-final-20260612">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <div class="brand-center">
+      <a class="brand" href="index.html#top" aria-label="Bion Med home">
+        <span class="brand-asset brand-asset-mark">
+          <img class="brand-mark" src="g3-proposals/bion-med-chatgpt-monogram-grafism-cropped.png" alt="">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+        <span class="brand-asset brand-asset-logo">
+          <img class="brand-logo" src="g3-proposals/bion-med-chatgpt-logotype-cropped.png" alt="Bion Med">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+      </a>
+      <p class="brand-sectors">Pharma Biotech Medical devices CRO</p>
+    </div>
+
+    <div class="language-switch" aria-label="Language selection">
+      <a class="language-link" href="case-studies-sr.html" aria-label="Srpska verzija">
+        <span class="language-flag" aria-hidden="true">🇷🇸</span>
+        <span>srb</span>
+      </a>
+      <a class="language-link is-active" href="case-studies.html" aria-label="English version" aria-current="page">
+        <span class="language-flag" aria-hidden="true">🇬🇧</span>
+        <span>eng</span>
+      </a>
+    </div>
+
+    <nav class="side-menu" aria-label="Site sections">
+      <button class="menu-trigger" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="side-panel">
+        <a href="index.html#about">About us</a>
+        <a href="index.html#services">Our services</a>
+        <a href="index.html#process-automation">Process automation</a>
+        <a href="index.html#experience">Our experience</a>
+        <a href="index.html#why-choose-us">Why choose us</a>
+        <a href="index.html#message-inquiries">Contact us</a>
+        <a href="case-studies.html" aria-current="page">Case studies</a>
+        <a href="news.html">News</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="case-page">
+      <div class="section-heading">
+        <p class="section-label">Case studies</p>
+        <h1>Representative project directions</h1>
+      </div>
+      <div class="case-list">
+        <article>
+          <span>01</span>
+          <h3>Evidence-to-market roadmap</h3>
+          <p>Clarifying scientific story, stakeholder priorities and launch preparation steps.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>CRO selection support</h3>
+          <p>Building evaluation criteria and decision material for a sponsor-side team.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Medical device readiness</h3>
+          <p>Aligning product claims, documentation needs and external communication.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html#message-inquiries">Contact us</a>
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3W9Iv8rAubSwvGtwa5ucIwI_nNhwjz5LhxlbKPDGXNx2U5GC1hXW3__2z9-smpKLWtkaJI_X5J" target="_blank" rel="noopener">Book a meeting</a>
+    <a href="privacy.html">Privacy notice</a>
+    <a href="cookies.html">Cookies</a>
+  </footer>
+  <script>
+    const siteHeader = document.querySelector('.site-header');
+
+    const updateTopFade = () => {
+      const distance = Math.min(Math.max(window.scrollY, 0), 260);
+      const fade = 1 - distance / 260;
+      siteHeader.style.setProperty('--top-fade', fade.toFixed(3));
+      siteHeader.style.setProperty('--top-shift', `${Math.round((1 - fade) * -34)}px`);
+      siteHeader.style.setProperty('--top-pointer-events', fade > 0.08 ? 'auto' : 'none');
+      siteHeader.style.setProperty('--header-bg-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-border-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-blur', `${Math.round(18 * fade)}px`);
+    };
+
+    updateTopFade();
+    window.addEventListener('scroll', updateTopFade, { passive: true });
+  </script>
+</body>
+</html>

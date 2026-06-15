@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bion Med | Cookie Policy</title>
+  <meta name="description" content="Bion Med cookie policy and cookie preference information.">
+  <link rel="stylesheet" href="styles.css?v=mobile-final-20260612">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <div class="brand-center">
+      <a class="brand" href="index.html#top" aria-label="Bion Med home">
+        <span class="brand-asset brand-asset-mark">
+          <img class="brand-mark" src="g3-proposals/bion-med-chatgpt-monogram-grafism-cropped.png" alt="">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+        <span class="brand-asset brand-asset-logo">
+          <img class="brand-logo" src="g3-proposals/bion-med-chatgpt-logotype-cropped.png" alt="Bion Med">
+          <span class="registered-mark" aria-hidden="true">R</span>
+        </span>
+      </a>
+      <p class="brand-sectors">Pharma Biotech Medical devices CRO</p>
+    </div>
+
+    <div class="language-switch" aria-label="Language selection">
+      <a class="language-link" href="cookies-sr.html" aria-label="Srpska verzija">
+        <span class="language-flag" aria-hidden="true">🇷🇸</span>
+        <span>srb</span>
+      </a>
+      <a class="language-link is-active" href="cookies.html" aria-label="English version" aria-current="page">
+        <span class="language-flag" aria-hidden="true">🇬🇧</span>
+        <span>eng</span>
+      </a>
+    </div>
+
+    <nav class="side-menu" aria-label="Site sections">
+      <button class="menu-trigger" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="side-panel">
+        <a href="index.html#about">About us</a>
+        <a href="index.html#services">Our services</a>
+        <a href="index.html#process-automation">Process automation</a>
+        <a href="index.html#experience">Our experience</a>
+        <a href="index.html#why-choose-us">Why choose us</a>
+        <a href="index.html#message-inquiries">Contact us</a>
+        <a href="case-studies.html">Case studies</a>
+        <a href="news.html">News</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="case-page policy-section">
+      <div class="section-heading">
+        <p class="section-label">Cookie policy</p>
+        <h1>How Bion Med uses cookies</h1>
+      </div>
+      <div class="policy-grid">
+        <article>
+          <h3>What cookies are</h3>
+          <p>Cookies are small text files or similar browser technologies that help a website remember choices, keep basic functions working, measure performance or support marketing activity.</p>
+        </article>
+        <article>
+          <h3>Essential cookies</h3>
+          <p>These are required for the site to function, remember your cookie preference and support basic security or form behavior. They cannot be switched off through the preference panel.</p>
+        </article>
+        <article>
+          <h3>Functional cookies</h3>
+          <p>These may remember preferences such as interface choices, saved settings or embedded service options. They are optional and used only if selected.</p>
+        </article>
+        <article>
+          <h3>Analytics cookies</h3>
+          <p>These may help Bion Med understand how visitors use the site, which pages are useful and where the experience can be improved. They should be aggregated where possible and are optional.</p>
+        </article>
+        <article>
+          <h3>Marketing cookies</h3>
+          <p>These may support campaign measurement, remarketing or cross-context advertising. They are optional and should not be enabled unless the visitor accepts them.</p>
+        </article>
+        <article>
+          <h3>Your choices</h3>
+          <p>You can accept all cookies, reject all non-essential cookies or choose individual categories when the cookie preference banner is shown on the site.</p>
+        </article>
+      </div>
+      <div class="policy-note">
+        <p>Bion Med uses essential cookies required for the website to function and to remember visitors' cookie preferences. Non-essential cookies, such as analytics, marketing or third-party tracking cookies, are not used unless they are clearly listed in this Cookie Policy and accepted by the visitor through the cookie banner. Visitors can refuse non-essential cookies and can change their cookie choices at any time.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html#message-inquiries">Contact us</a>
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3W9Iv8rAubSwvGtwa5ucIwI_nNhwjz5LhxlbKPDGXNx2U5GC1hXW3__2z9-smpKLWtkaJI_X5J" target="_blank" rel="noopener">Book a meeting</a>
+    <a href="privacy.html">Privacy notice</a>
+    <a href="cookies.html" aria-current="page">Cookies</a>
+  </footer>
+  <script>
+    const siteHeader = document.querySelector('.site-header');
+
+    const updateTopFade = () => {
+      const distance = Math.min(Math.max(window.scrollY, 0), 260);
+      const fade = 1 - distance / 260;
+      siteHeader.style.setProperty('--top-fade', fade.toFixed(3));
+      siteHeader.style.setProperty('--top-shift', `${Math.round((1 - fade) * -34)}px`);
+      siteHeader.style.setProperty('--top-pointer-events', fade > 0.08 ? 'auto' : 'none');
+      siteHeader.style.setProperty('--header-bg-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-border-alpha', (0.72 * fade).toFixed(3));
+      siteHeader.style.setProperty('--header-blur', `${Math.round(18 * fade)}px`);
+    };
+
+    updateTopFade();
+    window.addEventListener('scroll', updateTopFade, { passive: true });
+  </script>
+</body>
+</html>

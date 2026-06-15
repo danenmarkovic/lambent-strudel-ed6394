@@ -1,0 +1,47 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Biotech network visualization">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef9ff"/>
+      <stop offset="0.6" stop-color="#f8fbf8"/>
+      <stop offset="1" stop-color="#fff7df"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4DAFF7" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#4DAFF7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <circle cx="770" cy="430" r="380" fill="url(#pulse)"/>
+  <g stroke="#1B2B4B" stroke-width="3" opacity="0.28">
+    <path d="M364 530 L540 312 L780 406 L1042 286 L1256 462 L1084 652 L820 594 L602 710 Z" fill="none"/>
+    <path d="M540 312 L602 710 M780 406 L820 594 M1042 286 L1084 652 M364 530 L1256 462" fill="none"/>
+  </g>
+  <g>
+    <circle cx="364" cy="530" r="30" fill="#4DAFF7"/>
+    <circle cx="540" cy="312" r="46" fill="#3DBE7A"/>
+    <circle cx="780" cy="406" r="66" fill="#1B2B4B"/>
+    <circle cx="1042" cy="286" r="38" fill="#FFD24D"/>
+    <circle cx="1256" cy="462" r="54" fill="#4DAFF7"/>
+    <circle cx="1084" cy="652" r="44" fill="#3DBE7A"/>
+    <circle cx="820" cy="594" r="34" fill="#FFD24D"/>
+    <circle cx="602" cy="710" r="26" fill="#4DAFF7"/>
+  </g>
+  <g fill="white" opacity="0.9">
+    <circle cx="780" cy="406" r="12"/>
+    <circle cx="1256" cy="462" r="10"/>
+    <circle cx="540" cy="312" r="9"/>
+  </g>
+  <g fill="none" stroke="#1B2B4B" stroke-width="10" stroke-linecap="round" opacity="0.72">
+    <path d="M190 270 C260 220 334 224 402 274"/>
+    <path d="M196 626 C282 584 348 596 414 654"/>
+    <path d="M1198 190 C1288 142 1364 158 1430 232"/>
+    <path d="M1196 746 C1282 684 1388 700 1454 770"/>
+  </g>
+  <g transform="translate(206 120)" opacity="0.92">
+    <rect x="0" y="0" width="340" height="178" rx="22" fill="#ffffff" opacity="0.7"/>
+    <path d="M46 126 H292" stroke="#E6EBF1" stroke-width="8" stroke-linecap="round"/>
+    <path d="M62 126 V76 M132 126 V46 M202 126 V84 M272 126 V32" stroke="#4DAFF7" stroke-width="18" stroke-linecap="round"/>
+    <path d="M62 64 C124 32 186 64 272 24" fill="none" stroke="#3DBE7A" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="272" cy="24" r="11" fill="#FFD24D"/>
+  </g>
+</svg>
