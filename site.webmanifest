@@ -1,0 +1,22 @@
+{
+  "name": "Bion Med",
+  "short_name": "Bion Med",
+  "description": "Science-based consulting for pharma, biotech, medical device and CRO organizations.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7faff",
+  "theme_color": "#4daff7",
+  "icons": [
+    {
+      "src": "assets/icons/favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

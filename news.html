@@ -3,20 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bion Med | News</title>
-  <meta name="description" content="Bion Med news, company updates and practical life sciences consulting insights.">
-  <link rel="stylesheet" href="styles.css?v=mobile-final-20260612">
+  <meta name="theme-color" content="#4daff7">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/icons/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <title>Bion Med News | Healthcare Strategy and Consulting Insights</title>
+  <meta name="description" content="Bion Med news and practical insights on scientific strategy, clinical operations, medical devices, CRO collaboration and healthcare business execution.">
+  <link rel="canonical" href="https://bion-med.com/news.html">
+  <link rel="alternate" hreflang="en" href="https://bion-med.com/news.html">
+  <link rel="alternate" hreflang="sr" href="https://bion-med.com/news-sr.html">
+  <link rel="alternate" hreflang="x-default" href="https://bion-med.com/news.html">
+  <meta property="og:site_name" content="Bion Med">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bion Med News | Healthcare Strategy and Consulting Insights">
+  <meta property="og:description" content="Bion Med news and practical insights on scientific strategy, clinical operations, medical devices, CRO collaboration and healthcare business execution.">
+  <meta property="og:url" content="https://bion-med.com/news.html">
+  <meta property="og:image" content="https://bion-med.com/g3-proposals/bion-med-chatgpt-logotype-transparent.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bion Med News | Healthcare Strategy and Consulting Insights">
+  <meta name="twitter:description" content="Bion Med news and practical insights on scientific strategy, clinical operations, medical devices, CRO collaboration and healthcare business execution.">
+  <meta name="twitter:image" content="https://bion-med.com/g3-proposals/bion-med-chatgpt-logotype-transparent.png">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://bion-med.com/#organization",
+      "name": "Bion Med",
+      "url": "https://bion-med.com/",
+      "logo": "https://bion-med.com/g3-proposals/bion-med-chatgpt-logotype-transparent.png",
+      "image": "https://bion-med.com/g3-proposals/bion-med-chatgpt-logotype-transparent.png",
+      "email": "contact@bion-med.com",
+      "areaServed": [
+        "Europe",
+        "Serbia",
+        "United States"
+      ],
+      "serviceType": [
+        "Pharmaceutical consulting",
+        "Biotech strategy consulting",
+        "Medical device strategy",
+        "Clinical operations support",
+        "Healthcare business development"
+      ],
+      "slogan": "Science, Strategy, Solutions",
+      "description": "Bion Med provides science-based consulting for pharma, biotech, medical device and CRO organizations."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://bion-med.com/#website",
+      "name": "Bion Med",
+      "url": "https://bion-med.com/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://bion-med.com/#organization"
+      }
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="styles.css?v=case-accordion-20260629">
 </head>
-<body>
+<body class="dynamic-combined subpage-dynamic">
   <header class="site-header" aria-label="Primary">
     <div class="brand-center">
       <a class="brand" href="index.html#top" aria-label="Bion Med home">
         <span class="brand-asset brand-asset-mark">
-          <img class="brand-mark" src="g3-proposals/bion-med-chatgpt-monogram-grafism-cropped.png" alt="">
+          <img class="brand-mark" src="g3-proposals/bion-med-chatgpt-monogram-grafism-cropped.png" alt="" width="666" height="565" decoding="async">
           <span class="registered-mark" aria-hidden="true">R</span>
         </span>
         <span class="brand-asset brand-asset-logo">
-          <img class="brand-logo" src="g3-proposals/bion-med-chatgpt-logotype-cropped.png" alt="Bion Med">
+          <img class="brand-logo" src="g3-proposals/bion-med-logotype-hires-cropped.png" alt="Bion Med" width="1500" height="430" decoding="async">
           <span class="registered-mark" aria-hidden="true">R</span>
         </span>
       </a>
@@ -56,10 +115,9 @@
   </header>
 
   <main id="top">
-    <section class="case-page policy-section">
+    <section class="case-page policy-section title-only-page">
       <div class="section-heading">
-        <p class="section-label">News</p>
-        <h1>Updates from Bion Med</h1>
+        <h1>News</h1>
       </div>
       <div class="policy-grid">
         <article>
@@ -100,6 +158,21 @@
 
     updateTopFade();
     window.addEventListener('scroll', updateTopFade, { passive: true });
+
+    document.documentElement.classList.add('has-dynamic-motion');
+
+    const subpageRevealItems = document.querySelectorAll('.case-page, .section-heading, .policy-grid article, .policy-copy p, .case-list article, .site-footer');
+    subpageRevealItems.forEach((item) => item.classList.add('reveal-on-scroll'));
+
+    const subpageRevealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.14 });
+
+    subpageRevealItems.forEach((item) => subpageRevealObserver.observe(item));
   </script>
 </body>
 </html>
